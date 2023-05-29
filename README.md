@@ -20,3 +20,9 @@ Checking for the parity of a random-generated number.
 Find the result of a mathematical operation for two numbers.
 
 [![asciicast](https://asciinema.org/a/AjSoLSDBUwomBj33BKxsI5DpU.svg)](https://asciinema.org/a/AjSoLSDBUwomBj33BKxsI5DpU)
+
+### Brain-gcd game
+
+Find the greatest common divisor for two numbers.
+
+[![asciicast](https://asciinema.org/a/16ZJhBPA5HJlfnfWgKfvnZXJd.svg)](https://asciinema.org/a/16ZJhBPA5HJlfnfWgKfvnZXJd)
