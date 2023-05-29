@@ -14,3 +14,9 @@ Collection of games for leveling of brain abilities.
 Checking for the parity of a random-generated number.
 
 [![asciicast](https://asciinema.org/a/4Ln0PCTybu5qKZmoQHs1JbYZa.svg)](https://asciinema.org/a/4Ln0PCTybu5qKZmoQHs1JbYZa)
+
+### Brain-calc game
+
+Find the result of a mathematical operation for two numbers.
+
+[![asciicast](https://asciinema.org/a/AjSoLSDBUwomBj33BKxsI5DpU.svg)](https://asciinema.org/a/AjSoLSDBUwomBj33BKxsI5DpU)
