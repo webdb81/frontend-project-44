@@ -32,3 +32,9 @@ Find the greatest common divisor for two numbers.
 Find the missing number in the progression.
 
 [![asciicast](https://asciinema.org/a/kcPu0rHSY8dS4hyct0v6Qnzm1.svg)](https://asciinema.org/a/kcPu0rHSY8dS4hyct0v6Qnzm1)
+
+### Brain-prime game
+
+Check if a number is prime.
+
+[![asciicast](https://asciinema.org/a/OvFiiXargEz8eQO6o6pPWgdSi.svg)](https://asciinema.org/a/OvFiiXargEz8eQO6o6pPWgdSi)
