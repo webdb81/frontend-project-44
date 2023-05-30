@@ -26,3 +26,9 @@ Find the result of a mathematical operation for two numbers.
 Find the greatest common divisor for two numbers.
 
 [![asciicast](https://asciinema.org/a/16ZJhBPA5HJlfnfWgKfvnZXJd.svg)](https://asciinema.org/a/16ZJhBPA5HJlfnfWgKfvnZXJd)
+
+### Brain-progression game
+
+Find the missing number in the progression.
+
+[![asciicast](https://asciinema.org/a/kcPu0rHSY8dS4hyct0v6Qnzm1.svg)](https://asciinema.org/a/kcPu0rHSY8dS4hyct0v6Qnzm1)
