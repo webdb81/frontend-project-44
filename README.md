@@ -7,6 +7,51 @@
 
 Collection of games for leveling-up of brain abilities.
 
+## Prerequisites
+
+- [Node.js](https://nodejs.org/en) version 16 or higher.
+- Terminal for accessing Brain-Games via command line interface (CLI).
+
+## Install
+
+1. Clone project to your computer.
+
+```bash
+# via HTTPS
+git clone https://github.com/webdb81/frontend-project-44.git
+
+# or via Github CLI
+gh repo clone webdb81/frontend-project-44
+```
+
+1. Go to the main directory of cloning project.
+
+```bash
+cd frontend-project-44
+```
+
+1. Install all the necessary dependencies.
+
+```bash
+npm ci
+```
+
+1. Linking package to be able to run games. This command may require admin rights aka `sudo`.
+
+```bash
+npm link
+```
+
+1. Run the game using the commands from the list:
+
+- brain-even ([demo below](#brain-even-game)).
+- brain-calc ([demo below](#brain-calc-game)).
+- brain-gcd ([demo below](#brain-gcd-game)).
+- brain-progression ([demo below](#brain-progression-game)).
+- brain-prime ([demo below](#brain-prime-game)).
+
+---
+
 ## Games demonstration
 
 ### Brain-even game
