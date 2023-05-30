@@ -1,4 +1,5 @@
-import startGame, { getRandomNumber } from '../app.js';
+import startGame from '../index.js';
+import getRandomNumber from '../helpers.js';
 
 const getCalculate = (firstOperand, calcOperator, secondOperand) => {
   let result;
@@ -23,8 +24,8 @@ const getCalculate = (firstOperand, calcOperator, secondOperand) => {
 const stageCalcGame = () => {
   const question = 'What is the result of the expression?';
 
-  const firstOperand = getRandomNumber();
-  const secondOperand = getRandomNumber();
+  const firstOperand = getRandomNumber(1, 100);
+  const secondOperand = getRandomNumber(1, 50);
   const setOperators = ['+', '-', '*'];
 
   const taskCalculator = () => {

@@ -1,4 +1,5 @@
-import startGame, { getRandomNumber } from '../app.js';
+import startGame from '../index.js';
+import getRandomNumber from '../helpers.js';
 
 const getGCD = (dividend, divisor) => {
   if (divisor === 0) {
@@ -13,8 +14,8 @@ const getGCD = (dividend, divisor) => {
 const stageGcdGame = () => {
   const question = 'Find the greatest common divisor of given numbers.';
 
-  const firstOperand = getRandomNumber();
-  const secondOperand = getRandomNumber();
+  const firstOperand = getRandomNumber(1, 100);
+  const secondOperand = getRandomNumber(1, 100);
 
   const taskGCD = () => {
     const questStage = `${firstOperand} ${secondOperand}`;
