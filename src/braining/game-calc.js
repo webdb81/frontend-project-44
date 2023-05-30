@@ -24,11 +24,11 @@ const getCalculate = (firstOperand, calcOperator, secondOperand) => {
 const stageCalcGame = () => {
   const question = 'What is the result of the expression?';
 
-  const firstOperand = getRandomNumber(1, 100);
-  const secondOperand = getRandomNumber(1, 50);
-  const setOperators = ['+', '-', '*'];
-
   const taskCalculator = () => {
+    const firstOperand = getRandomNumber(1, 100);
+    const secondOperand = getRandomNumber(1, 50);
+
+    const setOperators = ['+', '-', '*'];
     const randomOperator = setOperators[Math.floor(Math.random() * (setOperators.length - 1))];
 
     const questStage = `${firstOperand} ${randomOperator} ${secondOperand}`;

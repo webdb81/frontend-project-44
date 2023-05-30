@@ -5,7 +5,7 @@
 
 ## Brain Games
 
-Collection of games for leveling of brain abilities.
+Collection of games for leveling-up of brain abilities.
 
 ## Games demonstration
 
@@ -25,7 +25,7 @@ Find the result of a mathematical operation for two numbers.
 
 Find the greatest common divisor for two numbers.
 
-[![asciicast](https://asciinema.org/a/16ZJhBPA5HJlfnfWgKfvnZXJd.svg)](https://asciinema.org/a/16ZJhBPA5HJlfnfWgKfvnZXJd)
+[![asciicast](https://asciinema.org/a/h6eX0nKOLZCd4DIZ8pbGCuhvU.svg)](https://asciinema.org/a/h6eX0nKOLZCd4DIZ8pbGCuhvU)
 
 ### Brain-progression game
 

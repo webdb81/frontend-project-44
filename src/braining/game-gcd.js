@@ -14,10 +14,9 @@ const getGCD = (dividend, divisor) => {
 const stageGcdGame = () => {
   const question = 'Find the greatest common divisor of given numbers.';
 
-  const firstOperand = getRandomNumber(1, 100);
-  const secondOperand = getRandomNumber(1, 100);
-
   const taskGCD = () => {
+    const firstOperand = getRandomNumber(1, 100);
+    const secondOperand = getRandomNumber(1, 100);
     const questStage = `${firstOperand} ${secondOperand}`;
     const answerCorrect = String(getGCD(firstOperand, secondOperand));
 
