@@ -1,6 +1,8 @@
 import startGame from '../index.js';
 import getRandomNumber from '../helpers.js';
 
+const description = 'Find the greatest common divisor of given numbers.';
+
 const getGCD = (dividend, divisor) => {
   if (divisor === 0) {
     return dividend;
@@ -11,19 +13,15 @@ const getGCD = (dividend, divisor) => {
   return result;
 };
 
-const stageGcdGame = () => {
-  const question = 'Find the greatest common divisor of given numbers.';
+const getQuestionAndAnswer = () => {
+  const firstOperand = getRandomNumber(1, 100);
+  const secondOperand = getRandomNumber(1, 100);
+  const question = `${firstOperand} ${secondOperand}`;
+  const answer = String(getGCD(firstOperand, secondOperand));
 
-  const taskGCD = () => {
-    const firstOperand = getRandomNumber(1, 100);
-    const secondOperand = getRandomNumber(1, 100);
-    const questStage = `${firstOperand} ${secondOperand}`;
-    const answerCorrect = String(getGCD(firstOperand, secondOperand));
-
-    return [questStage, answerCorrect];
-  };
-
-  startGame(question, taskGCD);
+  return [question, answer];
 };
 
-export default stageGcdGame;
+const startGcdGame = () => startGame(description, getQuestionAndAnswer);
+
+export default startGcdGame;

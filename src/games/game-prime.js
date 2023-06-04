@@ -1,6 +1,8 @@
 import startGame from '../index.js';
 import getRandomNumber from '../helpers.js';
 
+const description = 'Answer "yes" if given number is prime. Otherwise answer "no"';
+
 const isPrime = (num) => {
   for (let i = 2; i < num; i += 1) {
     if (num % i === 0) return false;
@@ -9,17 +11,13 @@ const isPrime = (num) => {
   return num !== 1;
 };
 
-const stagePrimeGame = () => {
-  const question = 'Answer "yes" if given number is prime. Otherwise answer "no"';
+const getQuestionAndAnswer = () => {
+  const question = getRandomNumber(2, 50);
+  const answer = isPrime(question) ? 'yes' : 'no';
 
-  const taskPrime = () => {
-    const questStage = getRandomNumber(2, 50);
-    const answerCorrect = isPrime(questStage) ? 'yes' : 'no';
-
-    return [questStage, answerCorrect];
-  };
-
-  startGame(question, taskPrime);
+  return [question, answer];
 };
 
-export default stagePrimeGame;
+const startPrimeGame = () => startGame(description, getQuestionAndAnswer);
+
+export default startPrimeGame;

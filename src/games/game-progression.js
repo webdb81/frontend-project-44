@@ -1,6 +1,8 @@
 import startGame from '../index.js';
 import getRandomNumber from '../helpers.js';
 
+const description = 'What number is missing in the progression?';
+
 const getProgression = () => {
   const startProgression = getRandomNumber(1, 20);
   const stepProgression = getRandomNumber(1, 6);
@@ -14,22 +16,18 @@ const getProgression = () => {
   return progression;
 };
 
-const stageProgressionGame = () => {
-  const question = 'What number is missing in the progression?';
+const getQuestionAndAnswer = () => {
+  const gameProgression = getProgression();
+  const hiddenSequence = getRandomNumber(0, gameProgression.length);
+  const answer = String(gameProgression[hiddenSequence]);
 
-  const taskProgression = () => {
-    const gameProgression = getProgression();
-    const hiddenSequence = getRandomNumber(0, gameProgression.length);
-    const answerCorrect = String(gameProgression[hiddenSequence]);
+  gameProgression[hiddenSequence] = '..';
 
-    gameProgression[hiddenSequence] = '..';
+  const question = gameProgression.join(' ');
 
-    const questStage = gameProgression.join(' ');
-
-    return [questStage, answerCorrect];
-  };
-
-  startGame(question, taskProgression);
+  return [question, answer];
 };
 
-export default stageProgressionGame;
+const startProgressionGame = () => startGame(description, getQuestionAndAnswer);
+
+export default startProgressionGame;

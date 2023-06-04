@@ -1,6 +1,9 @@
 import startGame from '../index.js';
 import getRandomNumber from '../helpers.js';
 
+const description = 'What is the result of the expression?';
+const setOperators = ['+', '-', '*'];
+
 const getCalculate = (firstOperand, calcOperator, secondOperand) => {
   let result;
 
@@ -21,23 +24,18 @@ const getCalculate = (firstOperand, calcOperator, secondOperand) => {
   return result;
 };
 
-const stageCalcGame = () => {
-  const question = 'What is the result of the expression?';
+const getQuestionAndAnswer = () => {
+  const firstOperand = getRandomNumber(1, 100);
+  const secondOperand = getRandomNumber(1, 50);
 
-  const taskCalculator = () => {
-    const firstOperand = getRandomNumber(1, 100);
-    const secondOperand = getRandomNumber(1, 50);
+  const randomOperator = setOperators[Math.floor(Math.random() * (setOperators.length - 1))];
 
-    const setOperators = ['+', '-', '*'];
-    const randomOperator = setOperators[Math.floor(Math.random() * (setOperators.length - 1))];
+  const question = `${firstOperand} ${randomOperator} ${secondOperand}`;
+  const answer = String(getCalculate(firstOperand, randomOperator, secondOperand));
 
-    const questStage = `${firstOperand} ${randomOperator} ${secondOperand}`;
-    const answerCorrect = String(getCalculate(firstOperand, randomOperator, secondOperand));
-
-    return [questStage, answerCorrect];
-  };
-
-  startGame(question, taskCalculator);
+  return [question, answer];
 };
 
-export default stageCalcGame;
+const startCalcGame = () => startGame(description, getQuestionAndAnswer);
+
+export default startCalcGame;
