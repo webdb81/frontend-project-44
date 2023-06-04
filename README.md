@@ -24,25 +24,25 @@ git clone https://github.com/webdb81/frontend-project-44.git
 gh repo clone webdb81/frontend-project-44
 ```
 
-1. Go to the main directory of cloning project.
+2. Go to the main directory of cloning project.
 
 ```bash
 cd frontend-project-44
 ```
 
-1. Install all the necessary dependencies.
+3. Install all the necessary dependencies.
 
 ```bash
 npm ci
 ```
 
-1. Linking package to be able to run games. This command may require admin rights aka `sudo`.
+4. Linking package to be able to run games. This command may require admin rights aka `sudo`.
 
 ```bash
 npm link
 ```
 
-1. Run the game using the commands from the list:
+5. Run the game using the commands from the list:
 
 - brain-even ([demo below](#brain-even-game)).
 - brain-calc ([demo below](#brain-calc-game)).
